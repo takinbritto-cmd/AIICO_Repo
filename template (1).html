@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SureCover Insurance | Customer Support</title>
+  <style>
+    :root {
+      --navy: #12304a;
+      --blue: #1261a0;
+      --blue-dark: #0b4778;
+      --teal: #0f766e;
+      --pale: #eaf4fb;
+      --background: #f4f7fb;
+      --surface: #ffffff;
+      --text: #152536;
+      --muted: #526579;
+      --border: #dbe5ee;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--background);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 17px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .brand { font-size: 1.3rem; font-weight: 700; letter-spacing: .2px; }
+    .brand span { color: #7dd3c7; }
+    nav { display: flex; gap: 20px; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; font-size: .95rem; }
+    nav a:hover { text-decoration: underline; }
+    .hero {
+      padding: 76px 6%;
+      color: white;
+      background: linear-gradient(120deg, #12304a, #1261a0);
+    }
+    .hero-inner { max-width: 1080px; margin: 0 auto; }
+    .eyebrow {
+      display: inline-block;
+      background: rgba(255,255,255,.14);
+      border: 1px solid rgba(255,255,255,.28);
+      border-radius: 30px;
+      padding: 5px 12px;
+      font-size: .85rem;
+      margin-bottom: 16px;
+    }
+    .hero h1 { max-width: 760px; font-size: clamp(2.1rem, 5vw, 3.5rem); line-height: 1.12; margin: 0 0 18px; }
+    .hero p { max-width: 700px; font-size: 1.12rem; color: #e7f2fb; }
+    .button {
+      display: inline-block;
+      margin: 12px 10px 0 0;
+      padding: 12px 19px;
+      border-radius: 7px;
+      background: white;
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .button.secondary { color: white; background: transparent; border: 1px solid rgba(255,255,255,.7); }
+    main { max-width: 1120px; margin: 0 auto; padding: 46px 6%; }
+    .section-heading { margin-bottom: 26px; }
+    .section-heading h2 { margin: 0 0 8px; font-size: 2rem; color: var(--navy); }
+    .section-heading p { margin: 0; color: var(--muted); max-width: 760px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 20px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 23px;
+      box-shadow: 0 4px 14px rgba(18,48,74,.05);
+    }
+    .card .icon {
+      display: grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 10px;
+      background: var(--pale);
+      color: var(--blue);
+      font-size: 1.4rem;
+      margin-bottom: 13px;
+    }
+    .card h3 { margin: 0 0 8px; color: var(--navy); }
+    .card p { margin: 0 0 15px; color: var(--muted); }
+    .card a { color: var(--blue); font-weight: 700; text-decoration: none; }
+    .card a:hover { text-decoration: underline; }
+    .steps {
+      margin-top: 42px;
+      padding: 27px;
+      border-radius: 12px;
+      background: #e8f5f3;
+      border: 1px solid #b9e4dd;
+    }
+    .steps h2 { margin-top: 0; color: #115e59; }
+    .steps ul { margin-bottom: 0; padding-left: 22px; }
+    .notice {
+      margin-top: 28px;
+      padding: 17px 19px;
+      border-left: 5px solid #38bdf8;
+      background: #eaf6fd;
+      border-radius: 7px;
+      color: #24445d;
+    }
+    footer { background: var(--navy); color: #dce8f2; padding: 24px 6%; text-align: center; font-size: .9rem; }
+    footer p { margin: 4px 0; }
+    @media (max-width: 600px) {
+      header { align-items: flex-start; }
+      nav { gap: 12px; }
+      .hero { padding-top: 55px; padding-bottom: 55px; }
+      main { padding-top: 34px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Sure<span>Cover</span> Insurance</div>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#claims">Claims</a>
+      <a href="#payments">Payments</a>
+      <a href="#account">Open an Account</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <span class="eyebrow">Insurance made simpler</span>
+      <h1>Protection you can count on. Support when you need it.</h1>
+      <p>Welcome to SureCover Insurance. Get help with an insurance claim, make a premium payment enquiry, or learn how to open an insurance account. Our support team is here to guide you.</p>
+      <a class="button" href="#services">Explore support options</a>
+      <a class="button secondary" href="#contact">Chat with us</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="services">
+      <div class="section-heading">
+        <h2>How can we help you?</h2>
+        <p>Choose a service below. In this lab, these options represent the common reasons a customer may contact an insurance company.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card" id="claims">
+          <div class="icon" aria-hidden="true">📄</div>
+          <h3>Claims Assistance</h3>
+          <p>Find out how to report an incident, submit supporting documents, or check the status of an existing claim.</p>
+          <a href="#contact">Get help with a claim →</a>
+        </article>
+
+        <article class="card" id="payments">
+          <div class="icon" aria-hidden="true">₦</div>
+          <h3>Premium Payments</h3>
+          <p>Ask about premium due dates, payment confirmation, receipts, or an issue with a recent payment.</p>
+          <a href="#contact">Get payment support →</a>
+        </article>
+
+        <article class="card" id="account">
+          <div class="icon" aria-hidden="true">＋</div>
+          <h3>Open an Insurance Account</h3>
+          <p>Learn about available insurance products and the information needed to start an application.</p>
+          <a href="#contact">Ask about opening an account →</a>
+        </article>
+
+        <article class="card" id="policy">
+          <div class="icon" aria-hidden="true">🛡️</div>
+          <h3>Policy Information</h3>
+          <p>Get general guidance on policy coverage, renewal dates, policy documents, and updating your details.</p>
+          <a href="#contact">Ask a policy question →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="steps">
+      <h2>What happens when you contact us?</h2>
+      <ul>
+        <li><strong>Choose a reason:</strong> claims, premium payments, opening an account, or policy information.</li>
+        <li><strong>Tell us how we can help:</strong> the chat flow can collect the details needed to direct your enquiry.</li>
+        <li><strong>Get assistance:</strong> once configured, Webex Contact Center can route the chat to the appropriate agent or queue.</li>
+      </ul>
+    </section>
+
+    <div class="notice" id="contact">
+      <strong>Live chat lab:</strong> This sample insurance website is ready to use as the page for your exercise. The chat widget will appear only after you configure the live chat asset in Webex Connect and insert the official embed code generated for that asset.
+    </div>
+  </main>
+
+  <footer>
+    <p><strong>SureCover Insurance</strong> — sample brand created for training purposes.</p>
+    <p>This demo does not accept real claims, payments, personal information, or insurance applications.</p>
+  </footer>
+
+  <!--
+    WEBEX CONNECT LIVE CHAT EMBED CODE GOES HERE.
+
+    After configuring the live chat asset in Webex Connect, paste the
+    official embed snippet supplied by the platform here. Use the exact
+    code generated for your own asset; do not guess a script URL.
+  -->
+</body>
+</html>
